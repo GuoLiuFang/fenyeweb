@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  charge_code_id: 1
+  charge_code_amount: 1
+  charge_code_name: MyString
+  charge_code_dest_number: MyString
+  charge_code_instruc_t: MyString
+  charge_code_instruc_no_t: MyString
+  yewucode_name: MyString
+  union_name: MyString
+
+two:
+  charge_code_id: 1
+  charge_code_amount: 1
+  charge_code_name: MyString
+  charge_code_dest_number: MyString
+  charge_code_instruc_t: MyString
+  charge_code_instruc_no_t: MyString
+  yewucode_name: MyString
+  union_name: MyString

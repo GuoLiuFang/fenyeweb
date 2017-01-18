@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Charge Codes Statistics</h1>
+<%= paginate(@charge_codes_statistics) %>
+<table border="2" >
+  <thead>
+    <tr>
+      <th>Charge code</th>
+      <th>Charge code amount</th>
+      <th>Charge code name</th>
+      <th>Charge code dest number</th>
+      <th>Charge code instruc t</th>
+      <th>Charge code instruc no t</th>
+      <th>Yewucode name</th>
+      <th>Union name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @charge_codes_statistics.each do |charge_codes_statistic| %>
+    <tr>
+      <td><%= charge_codes_statistic.charge_code_id %></td>
+      <td><%= charge_codes_statistic.charge_code_amount %></td>
+      <td><%= charge_codes_statistic.charge_code_dest_number %></td>
+      <td><%= charge_codes_statistic.charge_code_instruc_t %></td>
+      <td><%= charge_codes_statistic.charge_code_instruc_no_t %></td>
+      <td><%= charge_codes_statistic.charge_code_name %></td>
+      <td><%= charge_codes_statistic.yewucode_name %></td>
+      <td><%= charge_codes_statistic.union_name %></td>
+      <td bgcolor="green"><button type="button"><%= link_to 'Show', charge_codes_statistic %></button></td>
+      <td bgcolor="green"><button type="button"><%= link_to 'Edit', edit_charge_codes_statistic_path(charge_codes_statistic) %></button></td>
+      <td bgcolor="green"><button type="button"><%= link_to 'Destroy', charge_codes_statistic, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+    </tr>
+    <% end %>
+  </tbody>
+
+</table>
+<h1><button type="button" style="background: green"><%= link_to 'New Charge codes statistic', new_charge_codes_statistic_path %></button></h1>
+<%= paginate(@charge_codes_statistics) %>
+<br>
+

@@ -1,0 +1,1 @@
+json.array! @charge_codes_statistics, partial: 'charge_codes_statistics/charge_codes_statistic', as: :charge_codes_statistic

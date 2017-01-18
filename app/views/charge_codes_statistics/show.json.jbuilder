@@ -1,0 +1,1 @@
+json.partial! "charge_codes_statistics/charge_codes_statistic", charge_codes_statistic: @charge_codes_statistic

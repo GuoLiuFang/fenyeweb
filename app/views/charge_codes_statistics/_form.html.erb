@@ -1,0 +1,49 @@
+<%= form_for(@charge_codes_statistic) do |f| %>
+  <% if @charge_codes_statistic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@charge_codes_statistic.errors.count, "error") %> prohibited this charge_codes_statistic from being saved:</h2>
+
+      <ul>
+      <% @charge_codes_statistic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :charge_code_id %><br>
+    <%= f.number_field :charge_code_id %>
+  </div>
+  <div class="field">
+    <%= f.label :charge_code_amount %><br>
+    <%= f.number_field :charge_code_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :charge_code_name %><br>
+    <%= f.text_field :charge_code_name %>
+  </div>
+  <div class="field">
+    <%= f.label :charge_code_dest_number %><br>
+    <%= f.text_field :charge_code_dest_number %>
+  </div>
+  <div class="field">
+    <%= f.label :charge_code_instruc_t %><br>
+    <%= f.text_field :charge_code_instruc_t %>
+  </div>
+  <div class="field">
+    <%= f.label :charge_code_instruc_no_t %><br>
+    <%= f.text_field :charge_code_instruc_no_t %>
+  </div>
+  <div class="field">
+    <%= f.label :yewucode_name %><br>
+    <%= f.text_field :yewucode_name %>
+  </div>
+  <div class="field">
+    <%= f.label :union_name %><br>
+    <%= f.text_field :union_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

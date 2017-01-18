@@ -1,0 +1,2 @@
+json.extract! charge_codes_statistic, :id, :charge_code_id, :charge_code_amount, :charge_code_name, :charge_code_dest_number, :charge_code_instruc_t, :charge_code_instruc_no_t, :yewucode_name, :union_name, :created_at, :updated_at
+json.url charge_codes_statistic_url(charge_codes_statistic, format: :json)
